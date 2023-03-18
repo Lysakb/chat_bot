@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <link rel="stylesheet" href="style.css"/>
+            <link
+                  rel="stylesheet"
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+                  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                  crossorigin="anonymous"
+            />
+            <title>Chat-Bot</title>
+      </head>
+      <body>
+            <div
+                  class="container">
+                  <header class="msger-header">
+                        <div class="message-header"> Chat-Bot </div>
+                  </header>
+
+                  <div class="chat-container" id="Chat"></div>
+
+                  <form class="message-inputarea" id="form">
+                        <input type="text" class="message-input" id="inputMessage" placeholder="Enter your message"/>
+                        <button type="submit" class="message-send-btn">send</button>
+                  </form>
+            </div>
+            <script src="./socket.io/socket.io.js"></script>
+            <script src="./main.js"></script>
+      </body>
+</html>
