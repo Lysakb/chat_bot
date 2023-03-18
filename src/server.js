@@ -25,9 +25,10 @@ const io = new Server(server);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+const SECRET = process.env.SECRET
 
-const sessionMiddleWare = session({
-      secret: process.env.SECRET,
+const sessionMiddleWare = session({ 
+      secret: SECRET,
       resave: false,
       saveUninitialized: true,
 }); 
