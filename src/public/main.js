@@ -16,11 +16,11 @@ const handleMessage = (msg) => {
     <p class="user">${msg.user} <span>${msg.time}</span></p>
     <p class="text">${msg.message}</p>
     `;
-      //append the div to the messages div
+      
       Message.appendChild(div);
 };
 
-// Message submit
+
 chatForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
